@@ -82,5 +82,5 @@ unlink(path, recursive = TRUE)
 
 repo <- git2r::init(getwd())
 git2r::add(repo, "db.zip")
-git2r::commit(repo , "u db")
+git2r::commit(repo , paste("u", date()))
 
