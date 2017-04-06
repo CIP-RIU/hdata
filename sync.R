@@ -98,7 +98,10 @@ while (!config$stop) {
 
   }
 
-  sync_hd()
+  try({
+    sync_hd()
+  })
+
   Sys.sleep(60 * config$minutes)
 }
 
