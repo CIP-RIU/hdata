@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 sync.bat
+config.yaml
+sync1.bat
