@@ -2,10 +2,12 @@ library(DBI)
 library(RMySQL)
 
 
-config <- yaml::yaml.load_file("config.yaml")
 
+config <- list(stop = FALSE)
 
 while (!config$stop) {
+  config <- yaml::yaml.load_file("config.yaml")
+
   sync_hd <- function(){
 
     path <- file.path(getwd(), "hd")
